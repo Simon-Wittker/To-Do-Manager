@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Manager</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>To-Do-Manager</h1>
+    <p>Herzlich Willkommen im To-Do-Manager. Dieses Projekt wurde im Rahmen einer Java-Übung 
+        erstellt und beinhaltet ein Java-Backend (Spring Boot) und eine Web-Frontend (HTML, CSS und 
+        JS). Viel Spass damit ^^.</p>
+
+    <h2>To-Do erstellen</h2>
+
+    <form id="todoForm">
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="completed">Erledigt:</label>
+        <input type="checkbox" id="completed" name="completed">
+        <br>
+        <button type="submit">Erstellen</button>
+    </form>
+    <br><br>
+
+    <h2>To-Do-Liste</h2>
+    <ul id="todoList"></ul>
+
+    <!-- Bearbeitungsformular -->
+    <form id="updateForm" style="display: none;">
+        <h2>To-Do bearbeiten</h2>
+        <label for="updateTitle">Titel:</label>
+        <input type="text" id="updateTitle" name="title" required>
+        <br>
+        <label for="updateCompleted">Erledigt:</label>
+        <input type="checkbox" id="updateCompleted" name="updateCompleted">
+        <br>
+        <button type="submit">Aktualisieren</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
